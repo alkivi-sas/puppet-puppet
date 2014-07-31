@@ -1,0 +1,6 @@
+*filter
+
+-A INPUT -p tcp --dport 8140 -j ACCEPT -m comment --comment "puppet"
+
+COMMIT
+
