@@ -4,7 +4,6 @@ vardir=/var/lib/puppet
 ssldir=/var/lib/puppet/ssl
 rundir=/var/run/puppet
 factpath=$vardir/lib/facter
-templatedir=$confdir/templates
 <% if @parser %>parser=<%= @parser %><% end %>
 <% if @pluginsync %>pluginsync=<%= @pluginsync %><% end %>
 <% if @environment %>environment=<%= @environment %><% end %>
