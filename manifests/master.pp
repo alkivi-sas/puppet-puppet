@@ -15,7 +15,6 @@ class puppet::master(
 
   file { '/etc/iptables.d/50-puppet.rules':
     source  => 'puppet:///modules/puppet/puppet.rules',
-    require => Class["alkivi_base"],
     notify  => Service["alkivi-iptables"],
   }
 
